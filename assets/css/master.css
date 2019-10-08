@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+* {
+    --app-primary-color: #405661;
+    --app-secondary-color: #fff;
+    font-family: "Lato"
+}
+
+body {
+    background: var(--app-primary-color);
+    color: var(--app-secondary-color);
+}
