@@ -170,3 +170,52 @@ main {
         transform: rotate(-360deg);
     }
 }
+
+@media (max-width: 1000px) {
+    
+    main {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .summary {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    
+    .summary  > div{
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    .description {
+        margin-left: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .app-links-container {
+        justify-content: center;
+    }
+
+    .btn-link {
+        padding: 10px 10px;
+    }
+
+    .btn-link span{
+        font-size: 14px !important;
+    }
+
+    .preview {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
