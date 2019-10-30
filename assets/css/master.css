@@ -5,8 +5,10 @@
 
 * {
     --app-primary-color: #263238;
+    --app-primary-color-alpha: rgba(38, 50, 56, 0.8);
     --app-primary-light-color: #37474F;
     --app-secondary-color: #fff;
+    --app-accent-color: #1E61BE;
     font-family: "Lato"
 }
 
@@ -33,7 +35,7 @@ body {
     z-index: 4;
 }
 
-main {
+#firstSection{
     position: relative;
     height: 100vh;
     min-height: 100vh;
@@ -134,7 +136,7 @@ main {
     justify-content: center;
     align-items: center;
 }
-.preview img {
+.preview > img {
     width: 300px;
     object-fit: scale-down;
 }
@@ -161,6 +163,90 @@ main {
     margin: 0 5px;
     font-size: 18px;
 }
+
+#secondSection{
+    display: flex;
+    height: 100vh;
+    background: var(--app-primary-color-alpha);
+    z-index: 2;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.details {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    padding: 18px;
+    max-width: 500px;
+    text-align: center;
+    color: white;
+}
+
+.details strong {
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+#secondSection > div{
+    display: flex;
+    height: auto;
+}
+
+#secondSection > div > div {
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto;
+    max-height: 85vh;
+    display: flex;
+}
+
+.preview-features img{
+    object-fit: scale-down;
+    width: 100%;
+}
+
+.features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.features > div {
+    margin-bottom: 40px;
+}
+
+.feature-item img{
+    width: 64px;
+    height: 64px;
+}
+
+.feature-item h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.feature-item p {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    max-width: 300px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+
+
+
 
 
 /* queries and animations */
@@ -219,3 +305,5 @@ main {
     }
 
 }
+
+
