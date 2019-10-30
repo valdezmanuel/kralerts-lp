@@ -197,12 +197,16 @@ body {
 }
 
 #secondSection > div > div {
-    width: 33%;
+    width: 25%;
     padding: 10px;
     box-sizing: border-box;
     height: auto;
     max-height: 85vh;
     display: flex;
+}
+
+.preview-features {
+    width: 50% !important;
 }
 
 .preview-features img{
@@ -259,8 +263,26 @@ body {
 
 @media (max-width: 1000px) {
     
-    main {
+    #firstSection {
         flex-wrap: wrap;
+    }
+
+    #secondSection {
+        height: auto;
+        background: var(--app-primary-color);
+    }
+
+    #secondSection .preview-features {
+        display: none;
+    }
+
+    #secondSection > div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #secondSection > div > div{
+        width: 100%;
     }
 
     .logo {
