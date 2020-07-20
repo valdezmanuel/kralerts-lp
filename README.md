@@ -1,8 +1,8 @@
 <p align="center">
 
-<a href="https://kralerts.valdez.cloud">
 <img height="250" width="250" src="https://kralerts.valdez.cloud/assets/img/logo.png">
-</a>
+<a href="https://kralerts.valdez.cloud">kralerts.valdez.cloud</a>
+
 </p>
 
 # kralerts
